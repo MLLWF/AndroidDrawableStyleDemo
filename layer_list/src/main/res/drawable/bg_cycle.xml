@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--那么如果偏移量设为负值,经过验证，偏移超出的部分会被截掉而看不到-->
+    <!--疑问：：：为什么要偏移到-45dp才之后手机上才达到了半圆效果-->
+    <item android:right="-45dp">
+
+        <shape android:shape="oval">
+
+            <solid android:color="@color/colorAccent"/>
+            <size
+                android:width="50dp"
+                android:height="50dp"/>
+        </shape>
+    </item>
+
+</layer-list>

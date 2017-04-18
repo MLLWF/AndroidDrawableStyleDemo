@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:enterFadeDuration="500" android:exitFadeDuration="500">
+
+    <!--从上面的示例代码可以看到，layer-list可以作为根节点，也可以作为selector中item的子节点。
+    layer-list可以添加多个item子节点，每个item子节点对应一个drawable资源，按照item从上到下的顺序叠加在一起，再通过设置每个item的偏移量就可以看到阴影等效果了。
+    layer-list的item可以通过下面四个属性设置偏移量：-->
+
+    <!--android:top 顶部的偏移量-->
+    <!--android:bottom 底部的偏移量-->
+    <!--android:left 左边的偏移量-->
+    <!--android:right 右边的偏移量-->
+
+    <!--这四个偏移量和控件的margin设置差不多，都是外间距的效果。
+    如何不设置偏移量，前面的图层就完全挡住了后面的图层，从而也看不到后面的图层效果了。-->
+
+    <item android:state_selected="true">
+
+        <layer-list>
+
+            <item>
+
+                <color android:color="@color/colorAccent"/>
+
+            </item>
+
+            <item android:bottom="4dp" android:drawable="@android:color/white"/>
+
+        </layer-list>
+
+    </item>
+
+    <item>
+
+        <layer-list>
+
+            <item>
+                <color android:color="@color/colorAccent"/>
+            </item>
+
+            <item android:bottom="1dp" android:drawable="@android:color/white"/>
+
+        </layer-list>
+
+    </item>
+
+</selector>
