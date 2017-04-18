@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--selector作为drawable资源时，item指定android:drawable属性，并放于drawable目录下；-->
+<!--selector作为color资源时，item指定android:color属性，并放于color目录下；-->
+<!--color资源也可以放于drawable目录，引用时则用@drawable来引用，但不推荐这么做，drawable资源和color资源最好还是分开；-->
+<!--android:drawable属性除了引用@drawable资源，也可以引用@color颜色值；但android:color只能引用@color；-->
+<!--item是从上往下匹配的，如果匹配到一个item那它就将采用这个item，而不是采用最佳匹配的规则；所以设置默认的状态，一定要写在最后，如果写在前面，则后面所有的item都不会起作用了。-->
+
+
+<!--selector标签下有两个比较有用的属性要说一下，添加了下面两个属性之后，则会在状态改变时出现淡入淡出效果，但必须在API Level 11及以上才支持：-->
+<!--android:enterFadeDuration 状态改变时，新状态展示时的淡入时间，以毫秒为单位-->
+<!--android:exitFadeDuration 状态改变时，旧状态消失时的淡出时间，以毫秒为单位-->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+          android:enterFadeDuration="2000"
+          android:exitFadeDuration="2000">
+
+    <item android:drawable="@android:color/darker_gray" android:state_enabled="false"/>
+    <item android:drawable="@drawable/bg_btn" android:state_pressed="true"/>
+    <item android:drawable="@drawable/bg_btn_nomal"/>
+
+</selector>

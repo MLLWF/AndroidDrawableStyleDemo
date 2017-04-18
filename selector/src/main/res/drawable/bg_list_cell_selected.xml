@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--关于ListView的ListItem样式，有两种设置方式，一种是在ListView标签里设置android:listSelector属性(不建议用，有时候会没有效果)，另一种是在ListItem的布局layout里设置android:background。但是，这两种设置的结果却有着不同。同时，使用ListView时也有些其他需要注意的地方，总结如下：-->
+
+    <!--android:listSelector设置的ListItem默认背景是透明的，不管你在selector里怎么设置都无法改变它的背景。所以，如果想改ListItem的默认背景，只能通过第二种方式，在ListItem的布局layout里设置android:background。-->
+    <!--当触摸点击ListItem时，第一种设置方式下，state_pressed、state_focused和state_window_focused设为true时都会触发，而第二种设置方式下，只有state_pressed会触发。-->
+    <!--当ListItem里有Button或CheckBox之类的控件时，会抢占ListItem本身的焦点，导致ListItem本身的触摸点击事件会无效。那么，要解决此问题，有三种解决方案：-->
+
+    <!--将Button或CheckBox换成TextView或ImageView之类的控件-->
+    <!--设置Button或CheckBox之类的控件设置focusable属性为false-->
+    <!--设置ListItem的根布局属性android:descendantFocusability="blocksDescendants"-->
+    <!--第三种是最方便，也是推荐的方式，它会将ListItem根布局下的所有子控件都设置为不能获取焦点。android:descendantFocusability属性的值有三种，其中，ViewGroup是指设置该属性的View，本例中就是ListItem的根布局：-->
+
+    <!--beforeDescendants：ViewGroup会优先其子类控件而获取到焦点-->
+    <!--afterDescendants：ViewGroup只有当其子类控件不需要获取焦点时才获取焦点-->
+    <!--blocksDescendants：ViewGroup会覆盖子类控件而直接获得焦点-->
+
+
+    <item android:drawable="@color/colorPrimary" android:state_pressed="true"/>
+    <item android:drawable="@android:color/white"/>
+
+</selector>
