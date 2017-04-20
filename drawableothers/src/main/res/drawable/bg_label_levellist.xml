@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--level-list可以管理一组drawable，每个drawable设置一组level范围，最终会根据level值选取对应的drawable绘制出来。level-list通过添加item子标签来添加相应的drawable，其下的item只有三个属性：-->
+
+    <!--android:drawable 指定drawable资源，如果不设置该属性，也可以定义drawable类型的子标签-->
+    <!--android:minLevel 该item的最小level值-->
+    <!--android:maxLevel 该item的最大level值-->
+
+    <!--特别注意：：item的匹配规则是从上到下的，当设置的level值与前面的item的level范围匹配，则采用。一般item的添加按maxLevel从小到大排序下来，此时minLevel可以不用指定也能匹配到。-->
+
+    <item
+        android:maxLevel="10"
+        android:minLevel="0">
+        <shape android:shape="oval">
+            <solid android:color="@android:color/black"/>
+            <gradient
+                android:endColor="@android:color/black"
+                android:gradientRadius="50dp"
+                android:startColor="@android:color/white"
+                android:type="radial"/>
+            <size
+                android:width="50dp"
+                android:height="50dp"/>
+        </shape>
+    </item>
+
+    <item
+        android:maxLevel="50"
+        android:minLevel="10">
+        <shape android:shape="oval">
+            <solid android:color="@android:color/holo_blue_bright"/>
+            <gradient
+                android:endColor="@android:color/holo_blue_bright"
+                android:gradientRadius="50dp"
+                android:startColor="@android:color/white"
+                android:type="radial"/>
+            <size
+                android:width="50dp"
+                android:height="50dp"/>
+        </shape>
+    </item>
+
+    <item
+        android:maxLevel="80"
+        android:minLevel="50">
+        <shape android:shape="oval">
+            <solid android:color="@color/colorAccent"/>
+            <gradient
+                android:endColor="@color/colorAccent"
+                android:gradientRadius="50dp"
+                android:startColor="@android:color/white"
+                android:type="radial"/>
+            <size
+                android:width="50dp"
+                android:height="50dp"/>
+        </shape>
+    </item>
+
+    <item
+        android:maxLevel="100"
+        android:minLevel="80">
+        <shape android:shape="oval">
+            <solid android:color="@android:color/holo_red_dark"/>
+            <gradient
+                android:endColor="@android:color/holo_red_dark"
+                android:gradientRadius="50dp"
+                android:startColor="@android:color/white"
+                android:type="radial"/>
+            <size
+                android:width="50dp"
+                android:height="50dp"/>
+        </shape>
+    </item>
+</level-list>

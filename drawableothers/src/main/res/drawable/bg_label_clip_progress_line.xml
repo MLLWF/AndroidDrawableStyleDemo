@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="line">
+
+    <!--只能绘制水平方向的线，不能绘制垂直方向的线-->
+    <!--线的宽度和颜色是由stroke的宽度和颜色决定的-->
+    <!--size的高度是决定绘制区域的高度，并且高度必须要大于线的宽度，否则显示不出来-->
+    <!--线在整个区域是居中显示的-->
+    <!--如果绘制的是虚线，那么必须在引用虚线的view需要添加属性android:layerType，值设为"software"，否则虚线显示不出来-->
+
+    <stroke
+        android:width="2dp"
+        android:color="@color/colorAccent"
+        />
+
+    <size android:height="3dp"/>
+
+
+</shape>

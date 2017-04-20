@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidDrawableStyleDemo.iml" filepath="$PROJECT_DIR$/AndroidDrawableStyleDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/drawableothers/drawableothers.iml" filepath="$PROJECT_DIR$/drawableothers/drawableothers.iml" />
       <module fileurl="file://$PROJECT_DIR$/layer_list/layer_list.iml" filepath="$PROJECT_DIR$/layer_list/layer_list.iml" />
       <module fileurl="file://$PROJECT_DIR$/selector/selector.iml" filepath="$PROJECT_DIR$/selector/selector.iml" />
       <module fileurl="file://$PROJECT_DIR$/shape/shape.iml" filepath="$PROJECT_DIR$/shape/shape.iml" />

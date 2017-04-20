@@ -8,6 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/drawableothers" />
             <option value="$PROJECT_DIR$/layer_list" />
             <option value="$PROJECT_DIR$/selector" />
             <option value="$PROJECT_DIR$/shape" />

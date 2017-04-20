@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+                android:oneshot="false">
+    <!--android:oneshot属性设置是否循环播放，设为true时，只播放一轮就结束，设为false时，则会轮询播放。-->
+    <!--android:duration属性设置该帧持续的时间，以毫秒数为单位。-->
+    <!--animation-list对应的Drawable类为AnimationDrawable，要让动画运行起来，需要主动调用AnimationDrawable的start()方法。-->
+    <!--另外，如果在Activity的onCreate()方法里直接调用start()方法会有可能会没有效果，因为view还没有初始化完成是播放不了动画的。-->
+    <item
+        android:drawable="@drawable/bg_yingliang_1"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/bg_yingliang_2"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/bg_yingliang_3"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/bg_yingliang_4"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/bg_yingliang_5"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/bg_yingliang_6"
+        android:duration="200"/>
+
+</animation-list>

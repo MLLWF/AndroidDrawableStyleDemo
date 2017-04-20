@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transition xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--transition其实是继承自layer-list的，只是，transition只能管理两层drawable，另外提供了两层drawable之间切换的方法，切换时还会有淡入淡出的动画效果。-->
+    <!--transition标签生成的Drawable对应的类为TransitionDrawable，
+    要切换时，需要主动调用TransitionDrawable的startTransition()方法，参数为动画的毫秒数，也可以调用reverseTransition()方法逆向切换。-->
+
+    <!--((TransitionDrawable) transition.getDrawable()).startTransition(500);//正向切换，即从第一个drawable切换到第二个-->
+    <!--((TransitionDrawable) transition.getDrawable()).reverseTransition(500);//逆向切换，即从第二个drawable切换回第一个-->
+    <!--((TransitionDrawable) transition.getDrawable()).resetTransition(); //清除切换效果，返回到第一个drawable-->
+
+    <item>
+        <shape android:shape="rectangle">
+
+            <solid android:color="@color/colorAccent"/>
+            <stroke
+                android:width="2dp"
+                android:color="@android:color/holo_green_dark"
+                android:dashGap="4dp"
+                android:dashWidth="6dp"/>
+            <corners android:radius="15dp"/>
+            <gradient
+                android:angle="90"
+                android:endColor="@color/colorAccent"
+                android:startColor="@android:color/white"
+                android:type="linear"/>
+            <size
+                android:width="50dp"
+                android:height="30dp"/>
+
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="rectangle">
+
+            <solid android:color="@color/colorPrimary"/>
+            <stroke
+                android:width="2dp"
+                android:color="@android:color/holo_red_dark"
+                android:dashGap="4dp"
+                android:dashWidth="6dp"/>
+            <corners android:radius="15dp"/>
+            <gradient
+                android:angle="90"
+                android:endColor="@color/colorPrimary"
+                android:startColor="@android:color/white"
+                android:type="sweep"/>
+            <size
+                android:width="50dp"
+                android:height="30dp"/>
+
+        </shape>
+    </item>
+
+
+</transition>
