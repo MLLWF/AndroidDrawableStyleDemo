@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--android:repeatCount 设置动画重复执行的次数，默认为0，即不重复；可设为-1或infinite，表示无限重复-->
+<!--android:repeatMode 设置动画重复执行的模式，可设为以下两个值其中之一：-->
+
+<!--restart 动画重复执行时从起点开始，默认为该值-->
+<!--reverse 动画会反方向执行-->
+
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+        android:interpolator="@anim/anim_interpolator"
+        android:duration="2000"
+        android:fromDegrees="0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:repeatCount="-1"
+        android:repeatMode="reverse"
+        android:toDegrees="360"/>

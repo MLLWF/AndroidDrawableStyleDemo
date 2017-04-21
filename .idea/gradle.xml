@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/layer_list" />
             <option value="$PROJECT_DIR$/selector" />
             <option value="$PROJECT_DIR$/shape" />
+            <option value="$PROJECT_DIR$/viewanimation" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--可以实现缩放的动画效果，主要的属性如下：-->
+
+<!--android:duration 动画从开始到结束持续的时长，单位为毫秒-->
+<!--android:fromXScale 动画开始时X坐标上的缩放尺寸-->
+<!--android:toXScale 动画结束时X坐标上的缩放尺寸-->
+<!--android:fromYScale 动画开始时Y坐标上的缩放尺寸-->
+<!--android:toYScale 动画结束时Y坐标上的缩放尺寸-->
+<!--PS：以上四个属性，0.0表示缩放到没有，1.0表示正常无缩放，小于1.0表示收缩，大于1.0表示放大-->
+
+<!--android:pivotX 缩放时的固定不变的X坐标，一般用百分比表示，0%表示左边缘，100%表示右边缘-->
+
+<!--android:pivotY 缩放时的固定不变的Y坐标，一般用百分比表示，0%表示顶部边缘，100%表示底部边缘-->
+
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+     android:duration="2000"
+     android:fillAfter="true"
+    >
+
+    <scale
+        android:fromXScale="1.0"
+        android:fromYScale="1.0"
+        android:toXScale="2.0"
+        android:toYScale="2.0"/>
+
+
+</set>
+    <!--android:fillAfter 设置为true时，动画执行完后，View会停留在动画的最后一帧；默认为false；如果是动画集，需在<set>标签中设置该属性才有效-->
+    <!--android:fillBefore 设置为true时，动画执行完后，View回到动画执行前的状态，默认即为true-->
+    <!--android:fillEnabled 设置为true时，android:fillBefore的值才有效，否则android:fillBefore会被忽略-->
+
+    <!--特别注意 要想保持动画之后的效果只能设置android:fillAfter=true，设置android:fillBefore=false和android:fillEnabled=false没有效果-->
+    <!--特别注意：这样看来android:fillBefore和android:fillEnabled其实是默认死的，设置也没什么效果，所以不用管-->

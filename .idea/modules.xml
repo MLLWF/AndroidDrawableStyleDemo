@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/layer_list/layer_list.iml" filepath="$PROJECT_DIR$/layer_list/layer_list.iml" />
       <module fileurl="file://$PROJECT_DIR$/selector/selector.iml" filepath="$PROJECT_DIR$/selector/selector.iml" />
       <module fileurl="file://$PROJECT_DIR$/shape/shape.iml" filepath="$PROJECT_DIR$/shape/shape.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewanimation/viewanimation.iml" filepath="$PROJECT_DIR$/viewanimation/viewanimation.iml" />
     </modules>
   </component>
 </project>
