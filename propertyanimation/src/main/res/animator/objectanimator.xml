@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--与ValueAnimator相比多了一个属性，还有就是在配置动画的方式上，表现形式不一样罢了！-->
+<!--android:propertyName 目标对象的属性名，要求目标对象必须提供该属性的setter方法，如果动画的时候没有初始值，还需要提供getter方法-->
+
+<objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+                android:duration="3000"
+                android:propertyName="width"
+                android:repeatCount="infinite"
+                android:repeatMode="reverse"
+                android:valueFrom="100"
+                android:valueTo="20"
+                android:valueType="intType"
+
+    >
+
+</objectAnimator>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+     android:ordering="together"
+    >
+
+
+    <objectAnimator
+        android:duration="3000"
+        android:propertyName="width"
+        android:repeatCount="infinite"
+        android:repeatMode="reverse"
+        android:valueFrom="100"
+        android:valueTo="20"
+        android:valueType="intType"
+        />
+
+    <!--注意：这里如果指定 android:valueFrom的值，将会覆盖ViewWrapper里get设置的初始值-->
+    <!--如果不设置则取ViewWrapper里设置的初始值，如果ViewWrapper里也不设置初始值的话，就取0-->
+
+    <objectAnimator
+        android:duration="3000"
+        android:propertyName="marginTop"
+        android:repeatCount="infinite"
+        android:repeatMode="reverse"
+        android:valueTo="100"
+        android:valueType="intType"
+        />
+
+</set>

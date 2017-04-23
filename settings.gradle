@@ -1,1 +1,1 @@
-include ':shape', ':selector', ':layer_list', ':drawableothers', ':viewanimation'
+include ':shape', ':selector', ':layer_list', ':drawableothers', ':viewanimation', ':propertyanimation'
